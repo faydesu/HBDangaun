@@ -13,15 +13,15 @@ popImage.addEventListener('mousedown', () => {
   score++;
   document.getElementById('score').textContent = score;
   localStorage.setItem('popScore', score); // บันทึกคะแนน
-  popImage.src = 'assets/cat-clicked.png'; // เปลี่ยนภาพเมื่อคลิก
+  popImage.src = 'assets/เบบี้องุ่น.png'; // เปลี่ยนภาพเมื่อคลิก
 });
 
 // คืนภาพเดิมเมื่อปล่อยคลิก
 popImage.addEventListener('mouseup', () => {
-  popImage.src = 'assets/cat.png';
+  popImage.src = 'assets/องุ่น.png';
 });
 
-// สำหรับการเลื่อนเมาส์ออกนอกพื้นที่ (กรณีที่ยังคลิกอยู่)
+// กรณีเลื่อนเมาส์ออกจากภาพ
 popImage.addEventListener('mouseleave', () => {
-  popImage.src = 'assets/cat.png';
+  popImage.src = 'assets/องุ่น.png';
 });
